@@ -1,24 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import { Link, Navigate, Route, Routes } from "react-router-dom";
+import Schedule from './views/Schedule';
+import Plan from './views/Plan';
+import Exercises from './views/Exercises';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <nav className='d-flex justify-content-around'>
+        <Link to={`/schedule`}>Schedule</Link>
+        <Link to={`/plan`}>Exercise Plan</Link>
+        <Link to={`/exercises`}>Find Exercises</Link>
+      </nav>
+      <hr></hr>
+
+      <Routes>
+        <Route path='/' element={<Navigate to= '/schedule' replace/>}/>
+        <Route path='/schedule' element={<Schedule/>}/>
+        <Route path='/plan' element={<Plan/>}/>
+        <Route path='/exercises' element={<Exercises/>}/>
+      </Routes>
+    </>
   );
 }
 
