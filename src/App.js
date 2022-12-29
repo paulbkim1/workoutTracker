@@ -9,11 +9,10 @@ function App() {
   return (
     <>
       <nav className='d-flex justify-content-around'>
-        <Link to={`/schedule`}>Schedule</Link>
-        <Link to={`/plan`}>Exercise Plan</Link>
-        <Link to={`/exercises`}>Find Exercises</Link>
+        <Link className='text-decoration-none' to={`/schedule`}>Schedule</Link>
+        <Link className='text-decoration-none' to={`/plan`}>Exercise Plan</Link>
+        <Link className='text-decoration-none' to={`/exercises`}>Find Exercises</Link>
       </nav>
-      <hr></hr>
 
       <Routes>
         <Route path='/' element={<Navigate to= '/schedule' replace/>}/>

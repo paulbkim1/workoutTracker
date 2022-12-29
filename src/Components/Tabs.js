@@ -17,7 +17,7 @@ const Tabs = ({ children }) => {
                         className={tab.props.label === activeTab ? "current" : ""} 
                         key={tab.props.label}
                     >
-                        <a href="#" onClick={(e) => handleClick(e, tab.props.label)}>{tab.props.label}</a> 
+                        <a href="#" className='text-decoration-none' onClick={(e) => handleClick(e, tab.props.label)}>{tab.props.label}</a> 
                     </li>
                 ))}
             </ul>

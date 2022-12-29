@@ -27,66 +27,73 @@ export default function Schedule() {
 
     return (
     <div className='scheduleContainer'>
-        <div className='mondayContainer'>
+        <div className='exerciseColumn'>
             <h2>Monday</h2>
             {monday.map((exercise, i) => (
-                <div key={i}>
+                <div key={i} className='scheduleExercise'>
                     <p>{exercise.name}</p>
-                    <p>{exercise.mondayReps}</p>
+                    <p>reps: {exercise.mondayReps}</p>
+                    <p>sets: {exercise.mondaySets}</p>
                 </div>
             ))}
         </div>
-        <div className='tuesdayContainer'>
+        <div className='exerciseColumn'>
             <h2>Tuesday</h2>
             {tuesday.map((exercise, i) => (
-                <div key={i}>
+                <div key={i} className='scheduleExercise'>
                     <p>{exercise.name}</p>
-                    <p>{exercise.tuesdayReps}</p>
+                    <p>reps: {exercise.tuesdayReps}</p>
+                    <p>sets: {exercise.tuesdaySets}</p>
                 </div>
             ))}
         </div>
-        <div className='wednesdayContainer'>
+        <div className='exerciseColumn'>
             <h2>Wednesday</h2>
             {wednesday.map((exercise, i) => (
-                <div key={i}>
+                <div key={i} className='scheduleExercise'>
                     <p>{exercise.name}</p>
-                    <p>{exercise.wednesdayReps}</p>
+                    <p>reps: {exercise.wednesdayReps}</p>
+                    <p>sets: {exercise.wednesdaySets}</p>
                 </div>
             ))}
         </div>
-        <div className='thursdayContainer'>
+        <div className='exerciseColumn'>
             <h2>Thursday</h2>
             {thursday.map((exercise, i) => (
-                <div key={i}>
+                <div key={i} className='scheduleExercise'>
                     <p>{exercise.name}</p>
-                    <p>{exercise.thursdayReps}</p>
+                    <p>reps: {exercise.thursdayReps}</p>
+                    <p>sets: {exercise.thursdaySets}</p>
                 </div>
             ))}
         </div>
-        <div className='fridayContainer'>
+        <div className='exerciseColumn'>
             <h2>Friday</h2>
             {friday.map((exercise, i) => (
-                <div key={i}>
+                <div key={i} className='scheduleExercise'>
                     <p>{exercise.name}</p>
-                    <p>{exercise.fridayReps}</p>
+                    <p>reps: {exercise.fridayReps}</p>
+                    <p>sets: {exercise.fridaySets}</p>
                 </div>
             ))}
         </div>
-        <div className='saturdayContainer'>
+        <div className='exerciseColumn'>
             <h2>Saturday</h2>
             {saturday.map((exercise, i) => (
-                <div key={i}>
+                <div key={i} className='scheduleExercise'>
                     <p>{exercise.name}</p>
-                    <p>{exercise.saturdayReps}</p>
+                    <p>reps: {exercise.saturdayReps}</p>
+                    <p>sets: {exercise.saturdaySets}</p>
                 </div>
             ))}
         </div>
-        <div className='sundayContainer'>
+        <div className='exerciseColumn'>
             <h2>Sunday</h2>
             {sunday.map((exercise, i) => (
-                <div key={i}>
+                <div key={i} className='scheduleExercise'>
                     <p>{exercise.name}</p>
-                    <p>{exercise.sundayReps}</p>
+                    <p>reps: {exercise.sundayReps}</p>
+                    <p>sets: {exercise.sundaySets}</p>
                 </div>
             ))}
         </div>
