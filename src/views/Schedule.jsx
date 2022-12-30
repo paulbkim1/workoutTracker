@@ -26,7 +26,7 @@ export default function Schedule() {
 
 
     return (
-    <div className='scheduleContainer'>
+        <div className='scheduleContainer'>
         <div className='exerciseColumn'>
             <h2>Monday</h2>
             {monday.map((exercise, i) => (

@@ -7,8 +7,6 @@ function Popup(props) {
     const [formData, setFormData] = useState({
         name: (props.workout),
         monday: "false",
-        mondaySets: 0,
-        mondayReps: 0,
         tuesday: "false",
         wednesday: "false",
         thursday: "false",

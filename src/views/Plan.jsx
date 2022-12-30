@@ -55,7 +55,7 @@ export default function Plan() {
 
 
     return (
-        <main>
+        <main className="planContainer">
             <Tabs>
                 <div label="Monday">
                     {exercises.map((exercise) => {

@@ -8,10 +8,10 @@ import Exercises from './views/Exercises';
 function App() {
   return (
     <>
-      <nav className='d-flex justify-content-around'>
-        <Link className='text-decoration-none' to={`/schedule`}>Schedule</Link>
-        <Link className='text-decoration-none' to={`/plan`}>Exercise Plan</Link>
-        <Link className='text-decoration-none' to={`/exercises`}>Find Exercises</Link>
+      <nav className='navBar'>
+        <Link className='navBarLinks' to={`/schedule`}>Schedule</Link>
+        <Link className='navBarLinks' to={`/plan`}>Exercise Plan</Link>
+        <Link className='navBarLinks' to={`/exercises`}>Find Exercises</Link>
       </nav>
 
       <Routes>
