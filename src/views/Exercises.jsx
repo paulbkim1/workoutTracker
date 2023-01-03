@@ -36,9 +36,9 @@ export default function Exercises() {
 
 
     return (
-        <>
-            <div>
-                <label for="muscleGroup">Target Muscle:</label>
+        <div className="exerciseContainer">
+            <div className="exerciseSearch">
+                <h3>Target Muscle: </h3>
                 <select id="muscleGroup" value={targetMuscle} onChange={handleChange}>
                     <option value="">--Select the muscle you would like to exercise--</option>
                     <option value="Biceps brachii">Biceps Brachii (Biceps)</option>
@@ -59,7 +59,7 @@ export default function Exercises() {
                 </select>
             </div>
             <div className="container">
-                <main className='flex-row flex-wrap'>
+                <main className='exerciseResults'>
                     {filteredExercises.map((exercise, i) => (
                         <button onClick={() => setPopup(true) & setExercise(exercise.name)} key={i} className="card">
                             <p>{exercise.name}</p>
@@ -70,6 +70,6 @@ export default function Exercises() {
                     </Popup>
                 </main>
             </div>
-        </>
+        </div>
     )
 }

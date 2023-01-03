@@ -3,8 +3,8 @@
 }
 
 .navBar {
-  padding: 2.5vh 8vw;
-  background: #8C79D3;
+  padding: 1.5vh 8vw;
+  background: #DC3545;
   display: flex;
   justify-content: space-around;
 }
@@ -12,7 +12,12 @@
 .navBarLinks {
   text-decoration: none;
   color: white;
-  font-size: 1.6vw;
+  font-size: 2.0vw;
+  font-weight: 800;
+}
+
+.navBarLinks:hover {
+  color: rgba(42, 42, 42, 0.681);
 }
 
 .App-logo {
@@ -58,9 +63,10 @@
   display: flex;
   padding: 5vh 10vw;
   gap: 1.2vw;
-  background-image: url('https://images.pexels.com/photos/260352/pexels-photo-260352.jpeg?auto=compress&cs=tinysrgb&w=1600');
+  background-image: url('https://cdn.shopify.com/s/files/1/1876/4703/articles/shutterstock_1685490910_1000x.jpg?v=1647081388');
   background-size: 100%;
-  
+  background-size: cover;
+  height: 120vh;
 }
 
 .exerciseColumn {
@@ -69,8 +75,9 @@
 
 .exerciseColumn h2 {
   text-align: center;
+  color: white;
   margin-bottom: 4vh;
-  font-weight: 700;
+  font-weight: 650;
 }
 
 .scheduleExercise {
@@ -96,11 +103,10 @@
 
 .planContainer {
   padding: 5vh 10vw;
-  background-image: url('https://i.pinimg.com/originals/32/1c/e9/321ce9f5f48596a733d91e8f8d269808.jpg');
-  background-size: 100% 100%;
+  background-image: url('https://wallpapercave.com/wp/wp8487270.jpg');
+  background-size: 100%;
   background-size: cover;
-  width: 100%;
-  height: 100vh;
+  height: 120vh;
 }
 
 .tabs {
@@ -108,19 +114,19 @@
   padding: 0;
   margin: 0;
   display: flex;
-  border-bottom: 2px solid blue;
+  border-bottom: 2px solid #DC3545;
 }
 
 .tabs > li {
   padding: 0.5em 1em;
   margin: 0 1em;
+  font-size: 1.2vw;
 }
 
 .current {
-  background-color: white;
-  color: blue;
+  background-color: #DC3545;
   font-weight: bold;
-  border: 2px solid blue;
+  border: 2px solid #DC3545;
   border-bottom: 0;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -135,19 +141,57 @@
 
 
 
-.flex-row {
+.exerciseContainer {
+  background-image: url('https://i.pinimg.com/originals/32/1c/e9/321ce9f5f48596a733d91e8f8d269808.jpg');
+  background-size: 100%;
+  background-size: cover;
+  height: 110vh;
   display: flex;
+  flex-direction: column;
 }
 
-.flex-wrap {
+.exerciseSearch {
+  display: flex;
+  justify-content: center;
+  padding: 5.9vh 0 6vh;
+  color: white;
+  font-size: 1.2vw;
+  gap: 0.8vw;
+}
+
+.exerciseSearch h3 {
+  font-size: 2.5vw;
+  font-weight: 800;
+}
+
+.exerciseSearch select {
+  height: 2.5em;
+}
+
+.exerciseResults {
+  display: flex;
   flex-wrap: wrap;
 }
 
 .card {
-  padding: 10px;
+  padding: 17px 0 4px;
   width: 20%;
   border-radius: 5px;
   margin-bottom: 15px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   background-color: whitesmoke;
+  align-items: center;
+  vertical-align: 800px;
+}
+
+.popup {
+  position: fixed;
+  top: 15%;
+  left: 10%;
+  width: 80%;
+  height: 25%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: red;
 }

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import './Popup.css'
 import { useNavigate } from "react-router-dom";
 import { createExercise } from "../services/internalApiService";
 
@@ -34,7 +33,6 @@ function Popup(props) {
     }
 
     const handleFormChanges = (e) => {
-        e.preventDefault();
         setFormData({
             ...formData,
             [e.target.name] : e.target.value,
@@ -75,7 +73,7 @@ function Popup(props) {
                 <h2>Sunday</h2>
                 <input type="checkbox" name="sunday" value={true} onChange={handleFormChanges}/>
             </div>
-            <button className="close-btn" >close</button>
+            <button className="closeButton" >close</button>
         </form>
     ) : "";
 }
